@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>")
+
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+//    var vitorias = prompt("Entre com o número de vitórias: ");
+//    var empates = prompt("Entre com o número de empates: ");
+//    var pontosVitorias = (vitorias * 3);
+//    var pontosEmpates = (empates * 1);
+//    var pontosFinal = (pontosVitorias + pontosEmpates)
+//    mostra("O seu total de pontos com vitórias e empates é de " + pontosFinal);
+// Esse jeito foi o que eu fiz e achei melhor.
+// agora vou fazer o da Alura
+
+    var vitorias = parseInt(prompt("Entre com o número de vitórias."));
+
+    var empates = parseInt(prompt("Entre com o número de empates."));
+
+    var pontos = (vitorias * 3) + empates;
+
+    mostra("Os pontos do seu time é " + pontos);
+
+    document.write("<br>")
+
+    if(pontos > 28) {
+        mostra("Seu time está melhor que o ano passado."); 
+    }
+
+
+    if(pontos < 28) {
+        mostra("Seu time esta pior que ano passado.");
+    }
+
+    if(pontos == 28) {
+        mostra("Seu time esta igual o ano passado.");
+    }
+</script>    

@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var totalDeFuncionarios = parseInt(prompt("Quantos funcionários você tem? "));
+
+    var numero = 1;
+
+    var totalSalarios = 0;
+
+    while(numero <= totalDeFuncionarios) {
+
+        var salarios = parseInt(prompt("Qual o salário dos funcionários? "));
+        totalSalarios = totalSalarios + salarios;
+        numero++;
+    }
+
+    var mediaSalario = totalSalarios / totalDeFuncionarios;
+    document.write("A média de salário da sua empresa é de " + mediaSalario);
+
+
+
+</script>
